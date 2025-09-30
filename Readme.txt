@@ -1,0 +1,10 @@
+GraphT-DTA: Graph-Transformer-Based Model for Drug-Target Binding Affinity Prediction
+Introduction
+Predicting the affinity between drugs and targets is a challenging task in drug discovery, which is crucial for accelerating the drug development process and reducing costs. The development of new drugs is costly, time-consuming, and often accompanied by safety issues. The application of deep learning (DL) models to predict drug-target affinity (DTA) has received increasing attention due to their vital role in drug development. Therefore, it is of great significance to develop effective deep learning methods for DTA prediction. In this study, we propose GraphT-DTA, a model built on the Graph-Transformer architecture, to predict the binding affinity between drugs and targets. First, drugs and proteins are represented as graph structures with node and edge features, respectively. Then, we use the Graph-Transformer to extract the features of drugs and proteins. Finally, interaction learning is employed to fuse the features of drugs and proteins, and the affinity is predicted through a multi-layer perceptron (MLP). We conducted evaluation experiments on the Davis and KIBA datasets. Experimental results show that GraphT-DTA exhibits highly competitive performance across key evaluation metrics. These results demonstrate not only the accuracy of GraphT-DTA in affinity prediction but also its ability to maintain robust performance on two datasets.
+
+Installation
+1、Environment configuration requirements: Install (Pytorch 2.2.0) . Also need to install yaml.The code has been tested with Python 3.8.
+
+2、Datasets: The data processing and configuration are described in the datasets folder. The datasets are the Davis dataset and the KIBA dataset
+
+3、Run: Configuration file: First, you need to modify the variables DATASET and type in the data_process.py file to pre-process the data in the dataset, and then train the model in the train.py file.
