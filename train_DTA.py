@@ -76,14 +76,14 @@ def test(model, device, test_loader):
 
 if __name__ == '__main__':
 
-    DATASET = "human"
+    DATASET = "Davis"
     dir_input = ('dataset/' + DATASET + '/processed/')
     # dir_input = ('/2111041014/DTI/GTDTI/DTI/dataset/' + DATASET + '/processed/')
     os.makedirs(dir_input, exist_ok=True)
 
-    batch = 8
+    batch = 60
     lr = 1e-4
-    epochs = 1500
+    epochs = 1000
 
     dataset_train = GTDataset(compounds_graph=dir_input + 'train/compounds1.bin',
                               proteins=dir_input + 'train/proteins',
