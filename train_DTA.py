@@ -77,6 +77,7 @@ def test(model, device, test_loader):
 if __name__ == '__main__':
 
     #Davis
+    
     DATASET = "Davis"
     dir_input = ('dataset/' + DATASET + '/processed/')
     # dir_input = ('/2111041014/DTI/GTDTI/DTI/dataset/' + DATASET + '/processed/')
